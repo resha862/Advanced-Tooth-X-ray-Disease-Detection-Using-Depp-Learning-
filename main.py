@@ -39,7 +39,7 @@ st.table(data)
 
 uploaded_file = st.file_uploader("Choose a file", type=['png', 'jpg'])
 
-model_path = r"C:\Users\abdul\Downloads\best (100).pt"
+model_path = r"Model/best (100).pt"
 model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path)
 model.eval()
 
